@@ -96,30 +96,36 @@
 
             .experience-item {
               display: flex;
-              align-items: center; /* Menyelaraskan logo, judul, dan tahun secara horizontal */
-              gap: 15px; /* Jarak antara logo dan teks */
+              align-items: center;
+              gap: 15px;
               margin-bottom: 20px;
+              padding-bottom: 20px;
+              border-bottom: 2px solid lightgray; /* Garis pembatas */
           }
           
+          
           .experience-item img {
-            width: 100%; /* Gambar akan menyesuaikan dengan container */
-            max-width: 60px; /* Tetap menjaga ukuran maksimum */
-            height: auto; /* Menjaga aspek rasio */
-            object-fit: contain; /* Menampilkan seluruh gambar dengan proporsi yang baik */
+            width: 80px; /* Ukuran tetap untuk semua gambar */
+            height: 80px; /* Tinggi tetap agar seragam */
+            object-fit: cover; /* Mengisi area tanpa distorsi */
+            border-radius: 8px; /* Opsional: agar sedikit membulat */
         }
         
-        /* Jika layar kecil, buat gambarnya tetap proporsional */
-        @media (max-width: 600px) {
-            .experience-item {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-        
+        @media (max-width: 768px) {
             .experience-item img {
-                max-width: 50px; /* Sedikit lebih kecil untuk layar kecil */
-                height: auto;
+                width: 70px;
+                height: 70px;
             }
+        }
+        
+        @media (max-width: 480px) {
+            .experience-item img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        
+          
         
         
           
@@ -188,7 +194,7 @@
           <h2>Experience</h2>
       
           <div class="experience-item">
-              <img src="" alt="Job Image">
+              <img src="img/disdik.png" alt="Job Image">
               <div class="experience-details">
                   <h3>Intern | Dinas Pendidikan Kota Pekanbaru</h3>
                   <p class="years">03/2019 - 09/2019</p>
@@ -216,7 +222,7 @@
         </div>
 
         <div class="experience-item">
-          <img src="" alt="Job Image">
+          <img src="img/pomade.jpeg" alt="Job Image">
           <div class="experience-details">
               <h3>Full Stack Developer - Intern | Hairpomade Pekanbaru</h3>
               <p class="years"> 09/2023 - 02/2024</p>
@@ -225,7 +231,7 @@
       </div>
 
       <div class="experience-item">
-        <img src="" alt="Job Image">
+        <img src="img/sipeta.png" alt="Job Image">
         <div class="experience-details">
             <h3>Full Stack Developer - Freelance | Kejaksaan Negeri Indragiri Hulu</h3>
             <p class="years"> 06/2024 - 07/2024</p>
