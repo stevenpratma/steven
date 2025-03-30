@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Steven</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c0a40 ; /* Biru Dongker */
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 100%;
+            text-align: left;
+            padding: 20px 0;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .sidebar p {
+            font-style: italic;
+            color: lightgray;
+            margin-left: 20px;
+        }
+        .menu {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin: 20px 0;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .menu a:hover, .menu a.active {
+            color: lightblue;
+            transform: scale(1.1);
+        }
+        .content {
+            width: 100%;
+            padding: 20px;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        h2 {
+            border-bottom: 2px solid lightgray;
+            padding-bottom: 10px;
+        }
+        .social-links {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .social-links a {
+            margin-right: 15px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .sidebar {
+                width: 25%;
+                position: fixed;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .content {
+                width: 70%;
+                margin-left: 30%;
+            }
+
+            .experience-item {
+              display: flex;
+              align-items: center; /* Menyelaraskan logo, judul, dan tahun secara horizontal */
+              gap: 15px; /* Jarak antara logo dan teks */
+              margin-bottom: 20px;
+          }
+          
+          .experience-item img {
+              width: 60px; /* Ukuran seragam untuk semua logo */
+              height: 60px; /* Pastikan ukuran tetap */
+              border-radius: 0; /* Tidak membuat gambar bulat */
+              object-fit: contain; /* Menampilkan logo sepenuhnya */
+          }
+          
+          
+        
+        
+          
+          .experience-details {
+              flex: 1; /* Agar teks tetap sejajar dengan gambar */
+          }
+          
+          .experience-details h3 {
+              margin: 5px 0;
+              font-size: 20px;
+          }
+          
+          .years {
+              font-style: italic;
+              color: lightgray;
+              margin-bottom: 5px;
+          }
+          
+          /* Responsif untuk layar kecil */
+          @media (max-width: 600px) {
+              .experience-item {
+                  flex-direction: column;
+                  align-items: flex-start;
+              }
+          
+              .experience-item img {
+                  width: 60px;
+                  height: 60px;
+              }
+          }
+          
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Steven Pratama</h1>
+            <p>@steven</p>
+            <p>Frontend Developer</p>
+            <div class="menu">
+                <a href="#about">01 - ABOUT</a>
+                <a href="#experience">02 - EXPERIENCE</a>
+                <a href="#education">03 - EDUCATION</a>
+                <a href="#projects">04 - PROJECTS</a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.youtube.com/@stevenpratamayu1917"><i class="fa-brands fa-youtube"></i></a>
+                <a href="www.linkedin.com/in/steven-pratama-yu-996b17357"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/stevenpratma/"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="content">
+    <section id="about">
+        <h2>About</h2>
+        <p>Hey there! 👋</p>
+        <p>Saya adalah lulusan Teknik Informatika dari Universitas Muhammadiyah Riau dengan pengalaman sebagai Administrator dan Freelance Web Developer. Saya memiliki keterampilan dalam pengelolaan data, pencatatan stok, serta administrasi sistem. Selain itu, saya berpengalaman dalam mengembangkan berbagai proyek berbasis web, termasuk sistem manajemen dan pencarian berbasis algoritma. Dengan kombinasi keahlian administrasi dan teknologi, saya mampu mengoptimalkan proses kerja melalui solusi digital yang efisien.</p>
+    </section>
+
+
+        
+        <section id="experience">
+          <h2>Experience</h2>
+      
+          <div class="experience-item">
+              <img src="img/disdik.png" alt="Job Image">
+              <div class="experience-details">
+                  <h3>Intern | Dinas Pendidikan Kota Pekanbaru</h3>
+                  <p class="years">03/2019 - 09/2019</p>
+                  <p>Saya pernah menjalani program magang di Dinas Pendidikan Kota Pekanbaru, khususnya di bidang Sekolah Menengah Pertama (SMP). Selama magang, saya mendapatkan pengalaman dalam administrasi pendidikan, pengelolaan data sekolah, serta koordinasi program pendidikan tingkat SMP. Saya juga berkesempatan untuk memahami kebijakan dan regulasi pendidikan yang diterapkan di lingkungan sekolah menengah pertama. Selain itu, saya terlibat dalam penyusunan laporan, pengarsipan dokumen, serta mendukung kegiatan dinas yang berkaitan dengan pengembangan pendidikan di Kota Pekanbaru.</p>
+              </div>
+          </div>
+      
+          <div class="experience-item">
+              <img src="img/metro.png" alt="Job Image">
+              <div class="experience-details">
+                  <h3>Store Helper | CV. Metropolitan Pekanbaru</h3>
+                  <p class="years">12/2020 - 05/2022</p>
+                  <p>Sebuah perusahaan yang bergerak di bidang penjualan alat-alat teknik.
+                  </p>
+              </div>
+          </div>
+
+          <div class="experience-item">
+            <img src="img/fullmoon.png" alt="Job Image">
+            <div class="experience-details">
+                <h3>Warehouse Administrator | PT. Fullmoon Jaya Abadi</h3>
+                <p class="years">06/2022 - 06/2023</p>
+                <p>Bekerja sebagai Admin Gudang di PT. Fullmoon Jaya Abadi, di mana saya bertanggung jawab atas pengelolaan administrasi gudang dan pencatatan stok barang. Tugas saya mencakup pemantauan keluar masuk barang, pencatatan data inventaris, serta memastikan akurasi laporan stok dalam sistem.</p>
+            </div>
+        </div>
+
+        <div class="experience-item">
+          <img src="img/pomade.jpeg" alt="Job Image">
+          <div class="experience-details">
+              <h3>Full Stack Developer - Intern | Hairpomade Pekanbaru</h3>
+              <p class="years"> 09/2023 - 02/2024</p>
+              <p>Mengembangkan Website E-Commerce untuk penjualan online</p>
+          </div>
+      </div>
+
+      <div class="experience-item">
+        <img src="img/sipeta.png" alt="Job Image">
+        <div class="experience-details">
+            <h3>Full Stack Developer - Freelance | Kejaksaan Negeri Indragiri Hulu</h3>
+            <p class="years"> 06/2024 - 07/2024</p>
+            <p>Mengembangkan Sistem Penjemputan Tahanan (SIPETA)</p>
+        </div>
+    </div>
+      
+    <div class="experience-item">
+      <img src="img/smk6.jpg" alt="Job Image">
+      <div class="experience-details">
+          <h3>Full Stack Developer - Thesis | SMK Negeri 6 Pekanbaru</h3>
+          <p class="years"> 09/2024 - 02/2025</p>
+          <p>Mengembangkan Sistem Peminjaman dan Pengembalian Buku Perpustakaan Sekolah menggunakan Algoritma Word2Vec untuk pencarian judul buku secara semantik</p>
+      </div>
+  </div>
+      </section>
+      
+
+      <section id="education">
+        <h2>Education</h2>
+    
+        <div class="experience-item">
+            <img src="img/umri.png" alt="University Logo">
+            <div class="experience-details">
+                <h3>Universitas Muhammadiyah Riau</h3>
+                <p class="years">09/2020 - 02/2025</p>
+                <p>Lulus dengan gelar Sarjana dalam bidang Ilmu Komputer studi Teknik Informatika, dengan fokus pada pengembangan perangkat lunak dan desain antarmuka.</p>
+            </div>
+        </div>
+    </section>
+    
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>On Process tampilan halaman website masih dalam tahap pengembangan.</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
