@@ -102,11 +102,26 @@
           }
           
           .experience-item img {
-              width: 60px; /* Ukuran seragam untuk semua logo */
-              height: 60px; /* Pastikan ukuran tetap */
-              border-radius: 0; /* Tidak membuat gambar bulat */
-              object-fit: contain; /* Menampilkan logo sepenuhnya */
-          }
+            width: 100%; /* Gambar akan menyesuaikan dengan container */
+            max-width: 60px; /* Tetap menjaga ukuran maksimum */
+            height: auto; /* Menjaga aspek rasio */
+            object-fit: contain; /* Menampilkan seluruh gambar dengan proporsi yang baik */
+        }
+        
+        /* Jika layar kecil, buat gambarnya tetap proporsional */
+        @media (max-width: 600px) {
+            .experience-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        
+            .experience-item img {
+                max-width: 50px; /* Sedikit lebih kecil untuk layar kecil */
+                height: auto;
+            }
+        }
+        
           
           
         
